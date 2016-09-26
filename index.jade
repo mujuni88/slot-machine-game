@@ -1,0 +1,62 @@
+doctype html
+html
+	head
+		link(type='text/css', rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+		link(type='text/css', rel='stylesheet', href='css/style.css')
+		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400', rel='stylesheet', type='text/css')
+		link(rel='shortcut icon', href='images/thumbtack_brand_152x24.svg', type='image/x-icon')
+		title Slot Machine
+	body
+		header
+			nav.navbar.navbar-inverse.no-radius
+				.container-fluid
+					.navbar-header
+						button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+							span.sr-only Toggle navigation
+							span.icon-bar
+							span.icon-bar
+							span.icon-bar
+						a.navbar-brand(href="#") Slot Machine
+		main
+			.container
+				.row
+					.slm
+						.slm-hdr
+							img.slm-ic(src="images/thumbtack_brand_152x24.svg")
+							h3.slm-title Beverage Spin
+						.slm-main
+							.slm-top
+								.slm-board
+									#result.slm-msg.clr-b Spin now!
+							.slm-bottom
+								.slm-line
+									.slm-line-lbl 
+										| RESULT
+									.arrow-right
+								.slm-reels
+									#reel1.slm-reel
+										.slm-reel-item(data="Tea")
+											img.img-responsive(alt="Teapot" title="Teapot" src="images/teapot.svg")
+										.slm-reel-item(data="Coffee")
+											img.img-responsive(alt="Coffee Maker" title="Coffee Maker" src="images/coffee-maker.svg")
+										.slm-reel-item(data="Espresso")
+											img.img-responsive(alt="Espresso Machine" title="Espresso Machine" src="images/espresso-machine.svg")
+									#reel2.slm-reel
+										.slm-reel-item(data="Espresso")
+											img.img-responsive(alt="Espresso Tamper" title="Espresso Tamper" src="images/espresso.svg")
+										.slm-reel-item(data="Tea")
+											img.img-responsive(alt="Tea Strainer" title="Tea Strainer" src="images/tea.svg")
+										.slm-reel-item(data="Coffee")
+											img.img-responsive(alt="Coffee Filter" title="Coffee Filter" src="images/coffee.svg")
+									#reel3.slm-reel
+										.slm-reel-item(data="Coffee")
+											img.img-responsive(alt="Coffee Grounds" title="Coffee Grounds" src="images/coffee-grounds.svg")
+										.slm-reel-item(data="Espresso")
+											img.img-responsive(alt="Espresso Beans" title="Espresso Beans" src="images/espresso-beans.svg")
+										.slm-reel-item(data="Tea")
+											img.img-responsive(alt="Loose Tea" title="Loose Tea" src="images/loose-tea.svg")
+								button#start.btn.slm-btn Spin  
+		footer.navbar.navbar-inverse.navbar-fixed-bottom
+			.container
+				small.txt-pr.text-muted.pull-right Icons are Designed by Freepik and distributed by Flaticon.
+		script(src='js/script.js') 
